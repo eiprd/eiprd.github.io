@@ -51,6 +51,7 @@ export function ReplicationEntry({ replication }: { replication: Replication }) 
           {replication.projectUrl && (
             <a
               href={replication.projectUrl}
+              target="_blank"
               className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
             >
               <ArrowUpRight
@@ -63,6 +64,7 @@ export function ReplicationEntry({ replication }: { replication: Replication }) 
           {replication.codeUrl && (
             <a
               href={replication.codeUrl}
+              target="_blank"
               className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
             >
               <ArrowUpRight

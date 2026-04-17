@@ -34,6 +34,7 @@ export function WorkingPaperEntry({
           {workingpaper.paperUrl && (
             <a
               href={workingpaper.paperUrl}
+              target="_blank"
               className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
             >
               <ArrowUpRight
@@ -46,6 +47,7 @@ export function WorkingPaperEntry({
           {workingpaper.codeUrl && (
             <a
               href={workingpaper.codeUrl}
+              target="_blank"
               className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
             >
               <ArrowUpRight
@@ -58,6 +60,7 @@ export function WorkingPaperEntry({
           {workingpaper.bibtex && (
             <a
               href={workingpaper.bibtex}
+              target="_blank"
               className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
             >
               <ArrowUpRight

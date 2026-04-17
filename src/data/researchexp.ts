@@ -11,12 +11,20 @@ export interface Researchexp {
 export const researchexpData: Researchexp[] = [
 
   {
-    date: "2025—current",
+    date: "2026—current",
+    title: "Research Analyst",
+    company: "International Monetary Fund",
+    description:
+      "European Department (EURAI)",
+  },
+
+  {
+    date: "2025—2026",
     title: "Research Analyst",
     company: "European Central Bank",
     description:
       "DG-Economics, Fiscal Policies",
-    advisor: "Krzysztof Bańkowski",
+    advisor: "Krzysztof Bańkowski, Roberta De Stefani",
   },
 
   {

@@ -19,20 +19,20 @@ export interface AboutMe {
 
 export const aboutMe: AboutMe = {
   name: "Pierre M. Rouillard",
-  title: "_____________________________",
-  institution: "RA @European Central Bank",
+  title:       "___________________________________",
+  institution: "RA @International Monetary Fund",
   description:
     "I’m an experienced research assistant and aspiring economics researcher with a deep interest in time-series econometrics. I'm particularly keen on panel-based empirical methods in macroeconomics —including VARs, local projections, and quantile regressions. I'm also very much interested in topics related to inference of these approaches.",
-  email: "eip6@proton.me",
+  email: "prd1@proton.me",
   imageUrl:
     "/images/yez.png",
-  // googleScholarUrl: "https://xxx",
+  // googleScholarUrl: "https://eip",
   githubUsername: "pierld",
-  // linkedinUsername: "erreip",
-  // twitterUsername: "janesmith",
+  // linkedinUsername: "eip",
+  // twitterUsername: "eip",
   blogUrl: "https://",
   cvUrl: "https://www.dropbox.com/scl/fi/qesqaxh3cgvdv7uy54hxg/CV_RouillardPierre.pdf?rlkey=ztjeccuw8zxaq2qaifishcymm&st=r5hx6ttm&dl=0",
-  // institutionUrl: "https://www.stanford.edu",
+  // institutionUrl: "https://eip",
   // altName: "",
-  // secretDescription: "I like dogs.",
+  // secretDescription: "I like YE.",
 };

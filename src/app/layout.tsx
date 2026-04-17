@@ -45,14 +45,15 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${notoSerif.variable} ${ptSerif.variable} antialiased`}
       >
         <main className="">{children}</main>
-        <footer className="border-t border-neutral-200 dark:border-neutral-800 bg-white">
+        <footer className="border-t border-neutral-200 bg-white">
           <div className="flex flex-row mx-auto max-w-7xl px-6 py-6 md:flex md:items-start md:justify-between ">
 
             <div className="mb-4">
               <p className="text-sm text-neutral-500 dark:text-neutral-500 justify">
                 © {new Date().getFullYear()}{" "}
                 <a
-                  href="https://www.youtube.com/watch?v=ICEzGr7x3t4"
+                  href="https://www.youtube.com/watch?v=liIqZtaXgF8&list=RDliIqZtaXgF8&start_radio=1"
+                  target="_blank"
                   className="underline hover:text-neutral-800 dark:hover:text-neutral-300 transition-colors"
                 >
                   {aboutMe.name}
