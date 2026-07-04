@@ -29,6 +29,7 @@ export const educationData: Education[] = [
     year: "2018—2020",
     institution: "CPGE Lycée Pothier",
     degree: "MSPI-MP*",
+    info: "Mathematics and physics"
   },
 
 ];

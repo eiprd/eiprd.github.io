@@ -53,6 +53,7 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
             {aboutMe.altName}
           </p>
         )}
+
         <p className="text-zinc-600 text-xs leading-relaxed tracking-wide uppercase mb-6">
           {aboutMe.title}
           <br />
@@ -69,7 +70,86 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
             aboutMe.institution
           )}
         </p>
-        <div className="flex gap-6 mb-6">
+
+
+        <div className="space-y-1">
+          <a
+            href={`mailto:${aboutMe.email}`}
+            className="inline-flex items-center gap-2 text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Mail size={14} />
+            prd1@proton.me
+            {/*
+            <Mail size={14} />
+            {aboutMe.email}
+            */}
+          </a>
+
+          {aboutMe.googleScholarUrl && (
+            <>
+              <br />
+              <a
+                href={aboutMe.googleScholarUrl}
+                className="inline-flex items-center gap-2 text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <GraduationCap size={14} />
+                Google Scholar
+              </a>
+            </>
+          )}
+
+          {aboutMe.twitterUsername && (
+            <>
+              <br />
+              <a
+                href={`https://twitter.com/${aboutMe.twitterUsername}`}
+                className="inline-flex items-center gap-2 text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Twitter size={14} />@{aboutMe.twitterUsername}
+              </a>
+            </>
+          )}
+
+          {aboutMe.githubUsername && (
+            <>
+              <br />
+              <a
+                href={`https://github.com/${aboutMe.githubUsername}`}
+                className="inline-flex items-center gap-2 text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github size={14} />
+                {aboutMe.githubUsername}
+              </a>
+            </>
+          )}
+
+          {aboutMe.linkedinUsername && (
+            <>
+              <br />
+              <a
+                href={`https://www.linkedin.com/in/${aboutMe.linkedinUsername}`}
+                className="inline-flex items-center gap-2 text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Linkedin size={14} />
+                linkedin/{aboutMe.linkedinUsername}
+              </a>
+            </>
+          )}
+
+        </div>
+
+
+        <div className="flex gap-6 mt-4 mb-6">
           {/*
           {aboutMe.blogUrl && (
             <a
@@ -101,76 +181,8 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
             </a>
           )}
         </div>
-        <div className="space-y-2">
-          <a
-            href={`mailto:${aboutMe.email}`}
-            className="inline-flex items-center gap-2 text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Mail size={14} />
-            reach::out
-            {/*
-            <Mail size={14} />
-            {aboutMe.email}
-            */}
-          </a>
-          {aboutMe.googleScholarUrl && (
-            <>
-              <br />
-              <a
-                href={aboutMe.googleScholarUrl}
-                className="inline-flex items-center gap-2 text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <GraduationCap size={14} />
-                Google Scholar
-              </a>
-            </>
-          )}
-          {aboutMe.twitterUsername && (
-            <>
-              <br />
-              <a
-                href={`https://twitter.com/${aboutMe.twitterUsername}`}
-                className="inline-flex items-center gap-2 text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Twitter size={14} />@{aboutMe.twitterUsername}
-              </a>
-            </>
-          )}
-          {aboutMe.githubUsername && (
-            <>
-              <br />
-              <a
-                href={`https://github.com/${aboutMe.githubUsername}`}
-                className="inline-flex items-center gap-2 text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Github size={14} />
-                codes::{aboutMe.githubUsername}
-              </a>
-            </>
-          )}
-          {aboutMe.linkedinUsername && (
-            <>
-              <br />
-              <a
-                href={`https://www.linkedin.com/in/${aboutMe.linkedinUsername}`}
-                className="inline-flex items-center gap-2 text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Linkedin size={14} />
-                linkedin/{aboutMe.linkedinUsername}
-              </a>
-            </>
-          )}
-        </div>
+
+
       </div>
     </div>
   );

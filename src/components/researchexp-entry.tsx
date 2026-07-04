@@ -18,16 +18,18 @@ export function ResearchexpEntry({ researchexp }: { researchexp: Researchexp }) 
             </a>
           ) : (
             researchexp.company
-          )} —{" "}{researchexp.title}
+          )}
+          {/* <span className="text-sm ml-2">—<span className="ml-2">{researchexp.title}</span></span> */}
+          <span className="text-sm ml-1">—<span className="ml-1">{researchexp.title}</span></span>
         </h3>
-        {researchexp.advisor && (
-          <p className="text-sm text-zinc-600 leading-relaxed italic mt-2">
-            Advisor: {researchexp.advisor}
-          </p>
-        )}
         {researchexp.manager && (
           <p className="text-sm text-zinc-600 leading-relaxed italic mt-2">
             Manager: {researchexp.manager}
+          </p>
+        )}
+        {researchexp.advisor && (
+          <p className="text-sm text-zinc-600 leading-relaxed italic mt-2">
+            Advisor: {researchexp.advisor}
           </p>
         )}
         {researchexp.description && (

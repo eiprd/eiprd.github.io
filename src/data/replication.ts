@@ -8,5 +8,4 @@ export interface Replication {
 }
 
 export const replicationData: Replication[] = [
-
 ];

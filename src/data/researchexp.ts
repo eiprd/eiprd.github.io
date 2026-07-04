@@ -15,12 +15,12 @@ export const researchexpData: Researchexp[] = [
     title: "Research Analyst",
     company: "International Monetary Fund",
     description:
-      "European Department (EURAI)",
+      "European Department, Regional Studies",
   },
 
   {
     date: "2025—2026",
-    title: "Research Analyst",
+    title: "Trainee, Research Analyst",
     company: "European Central Bank",
     description:
       "DG-Economics, Fiscal Policies",

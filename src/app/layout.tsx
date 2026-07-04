@@ -45,7 +45,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${notoSerif.variable} ${ptSerif.variable} antialiased`}
       >
         <main className="">{children}</main>
-        <footer className="border-t border-neutral-200 bg-white">
+        {/* <footer className="border-t border-neutral-200 bg-white"> */}
+        <footer className="bg-white">
           <div className="flex flex-row mx-auto max-w-7xl px-6 py-6 md:flex md:items-start md:justify-between ">
 
             <div className="mb-4">
@@ -62,13 +63,13 @@ export default function RootLayout({
             </div>
 
             <div className="mb-4">
-              <p className="italic text-sm text-neutral-300">
+              <p className="italic text-s text-neutral-300">
                 Forked from{" "}
                 <a
                   href="https://github.com/tovacinni/research-website-template"
                   className="hover:text-neutral-800 dark:hover:text-neutral-300 transition-colors"
                 >
-                  research-website-template
+                research-website-template
                 </a>
               </p>
             </div>

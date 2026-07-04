@@ -4,7 +4,6 @@ export interface CustomMetadata {
 }
 
 export const customMetadata: CustomMetadata = {
-  // If you want a custom title or description you can add it here.
-  // title: "My Custom Title",
-  // description: "My Custom Description",
+  title: "P.M.R.",
+  description: "Personal page of Pierre M. Rouillard",
 };

@@ -30,21 +30,25 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       
       {/* Don't have a great call on whether max-w-screen-xl is better */}
-      <div className="max-w-screen-lg mx-auto px-6 py-24">
+      {/* <div className="max-w-screen-lg mx-auto px-6 py-24"> */}
+      <div className="max-w-screen-xl mx-auto px-6 py-24">
 
         {/* Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-">
-          
+        {/* <div className="grid grid-cols-1 md:grid-cols-12 gap-"> */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-x-18">
+
           {/* Left Column - Fixed Info */}
-          <div className="col-span-12 md:col-span-4 space-y-12 mb-8 md:mb-0">
-            {/* Profile */}
+          {/* <div className="col-span-12 md:col-span-4 space-y-12 mb-8 md:mb-0"> */}
+          <div className="col-span-12 md:col-span-3 md:-translate-x-12 space-y-12 mb-8 md:mb-0">
             <div className="md:sticky top-12 space-y-20">
+              {/* Profile */}
               <ProfileSection aboutMe={aboutMe} />
             </div>
           </div>
 
           {/* Right Column - Scrolling Content */}
-          <div className="col-span-12 md:col-span-7 md:col-start-6 space-y-32">
+          {/* <div className="col-span-12 md:col-span-7 md:col-start-6 space-y-32"> */}
+          <div className="col-span-12 md:col-span-9 space-y-32">
   
             {/* About section is typically first */}
             {aboutMe.description && (
@@ -56,19 +60,20 @@ export default function Home() {
               </section>
             )}
 
-            {/* Map through sectionOrder to render sections in correct order */}
+            {/*===== Map through sectionOrder to render sections in correct order =====*/}
             {sectionOrder.map((sectionName) => {
               // Most of this is redundant... but in case it needs to be unique.
               switch (sectionName) {
-
+                
+                // NEWS
                 case Section.News:
                   return (
                     newsData.length > 0 && (
                       <section key={sectionName}>
-                        <h2 className="font-serif text-l mb-14 tracking-wide uppercase">
+                        <h2 className="font-serif text-lg mb-6 tracking-wide uppercase">
                           News
                         </h2>
-                        <div className="space-y-12">
+                        <div className="space-y-6">
                           {newsData.map((news, index) => (
                             <div key={index}>
                               <NewsEntry news={news} />
@@ -83,7 +88,7 @@ export default function Home() {
                   return (
                     publicationData.length > 0 && (
                       <section key={sectionName}>
-                        <h2 className="font-bold font-serif text-l mb-14 tracking-wide uppercase">
+                        <h2 className="font-bold font-serif text-lg mb-10 tracking-wide uppercase">
                           Publications
                         </h2>
                         <div className="space-y-12">
@@ -104,7 +109,7 @@ export default function Home() {
                   return (
                     workingpaperData.length > 0 && (
                       <section key={sectionName}>
-                        <h2 className="font-bold font-serif text-l mb-14 tracking-wide uppercase">
+                        <h2 className="font-bold font-serif text-lg mb-10 tracking-wide uppercase">
                           Working Papers
                         </h2>
                         <div className="space-y-12">
@@ -125,7 +130,7 @@ export default function Home() {
                   return (
                     replicationData.length > 0 && (
                       <section key={sectionName}>
-                        <h2 className="font-bold font-serif text-md mb-14 tracking-wide uppercase">
+                        <h2 className="font-bold font-serif text-l mb-10 tracking-wide uppercase">
                           Replication codes
                         </h2>
                         <div className="space-y-12">
@@ -141,7 +146,7 @@ export default function Home() {
                   return (
                     researchexpData.length > 0 && (
                       <section key={sectionName}>
-                        <h2 className="font-bold font-serif text-md mb-10 tracking-wide uppercase">
+                        <h2 className="font-bold font-serif text-l mb-10 tracking-wide uppercase">
                           Research Experience
                         </h2>
                         <div className="space-y-12">
@@ -163,7 +168,7 @@ export default function Home() {
                         <h2 className="font-bold font-serif text-zinc-700 mb-10 tracking-wide uppercase">
                           Education
                         </h2>
-                        <div className="space-y-12">
+                        <div className="space-y-6">
                           {educationData.map((education, index) => (
                             <EducationEntry key={index} education={education} />
                           ))}
@@ -179,7 +184,7 @@ export default function Home() {
                         <h2 className="font-bold font-serif text-md mb-10 tracking-wide uppercase">
                           Experience
                         </h2>
-                        <div className="space-y-12">
+                        <div className="space-y-6">
                           {experienceData.map((experience, index) => (
                             <ExperienceEntry
                               key={index}
