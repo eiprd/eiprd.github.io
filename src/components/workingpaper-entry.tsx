@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { ArrowUpRight, ChevronDown, ChevronUp, ChevronRight } from "lucide-react";
+import { ArrowUpRight, ChevronDown, ChevronRight } from "lucide-react";
 import { WorkingPaper } from "@/data/workingpapers";
 
 export function WorkingPaperEntry({
